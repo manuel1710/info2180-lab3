@@ -12,7 +12,7 @@ const render_board = () => {
     gameState.forEach((e,i)) => {
         statusDisplay.innerHTML += '<div class="square" onclick="addPlayerMove(${i})">${gameState[i]}</div>';
         if (e == currentPlayer || e == nextPlayer) {
-            document.querySelector('board').classList.add("occupied");
+            document.querySelector('.board').classList.add("occupied");
         }
     });
 };
